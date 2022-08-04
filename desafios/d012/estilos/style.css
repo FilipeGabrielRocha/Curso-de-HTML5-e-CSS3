@@ -4,61 +4,93 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-:root {
-    --font-titulo: 'Passion One', cursive;
-    --font-poema: 'Sriracha', cursive;
-    --font-padrao: Arial, Helvetica, sans-serif
-
-
-}
-
-.fundo1 {
-    background: white url(../imagens/background001.jpg) center center no-repeat fixed;
-    background-size: cover;
-    box-shadow: 0px 7px 29px 0px #0000006b;
-}
-
-.fundo2 {
-    background: white url(../imagens/background002.jpg) center center no-repeat fixed;
-    background-size: cover;
-    box-shadow: 0px 7px 29px 0px #0000006b;
-}
-
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
+}
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+
+    --sombra0: #0000006b;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 30px;
 }
 
 header h1 {
-    font-family: var(--font-titulo);
-
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 10vw;
 }
 
 header p {
-    font-family: var(--font-padrao);
+    padding-bottom: 50px;
     padding-top: 15px;
+    font-family: var(--font1);
 }
 
-header a {
+header a, footer a {
     text-decoration: none;
     color: white;
 }
 
-header a:hover {
+haeder a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-main p {
-    font-family: var(--font-poema);
-    padding: 25px;
-    line-height: 35px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3.5vw;
+}
+
+section p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: #333333;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.429);
+}
+
+section.imagem-fundo1 {
+    background: black url(../imagens/background001.jpg) right center no-repeat fixed;
+    background-size: cover;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 0px 15px;
+    background-color: rgba(0, 0, 0, 0.555);
+    text-shadow: 1px 1px 0px black;
+}
+
+section.imagem-fundo2 {
+    background: black url(../imagens/background002.jpg) right center no-repeat fixed;
+    background-size: cover;
 }
 
 footer {
@@ -69,14 +101,5 @@ footer {
 }
 
 footer p {
-    font-family: var(--font-padrao);
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    font-family: var(--font1);
 }
