@@ -21,3 +21,7 @@ td, th {
     background-color: gray;
     color: white;
 }
+
+.esquerda {
+    text-align: left;
+}
