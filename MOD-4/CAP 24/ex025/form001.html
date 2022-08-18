@@ -13,7 +13,16 @@
 </head>
 <body>
     <h1>Meu primeiro Formulário</h1>
+    <h2>Método GET</h2>
     <form method="GET" action="cadastro.php">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Cadastrar"></p>
+    </form>
+    <h2>Método POST</h2>
+    <form method="POST" action="cadastro.php">
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> 
