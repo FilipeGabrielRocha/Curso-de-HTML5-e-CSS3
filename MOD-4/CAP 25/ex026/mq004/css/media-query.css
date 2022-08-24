@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* TODAS AS DEMAIS MEDIAS */
+
+@media print {
+
+}
+
+@media (max-width: 1024px) {
+    body {
+        background: black url(../images/back-tablet.jpg) center center no-repeat fixed;
+        background-size: cover;
+    }
+}
