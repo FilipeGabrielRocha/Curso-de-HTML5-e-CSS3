@@ -5,16 +5,16 @@ body, html {
 }
 
 header {
-    background-color: rgb(148, 148, 148);
+    background-color: #949494;
 }
 
 header h1 {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
 #menu {
-    background-color: rgb(48, 48, 48);
+    background-color: #303030;
     display: block;
     color: white;
     text-align: center;
@@ -39,18 +39,18 @@ menu a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color: rgb(87, 87, 87);
+    background-color: #575757;
     color: white;
     text-align: center;
-    border-top: 2px solid gray;
+    border-top: 2px solid #808080;
 }
 
 menu a:hover {
-    background-color: gray;
+    background-color: #808080;
 }
 
 main {
-    width: 90vw;
+    width: 85vw;
     background-color: white;
     margin: auto;
     padding: 10px;

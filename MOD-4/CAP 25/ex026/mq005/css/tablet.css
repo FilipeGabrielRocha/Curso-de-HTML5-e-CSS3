@@ -1,0 +1,19 @@
+@charset "UFT-8";
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    header menu#itens {
+        display: block;
+    }
+
+    header ul li {
+        display: inline-block;
+    }
+    
+    header span#menu {
+        display: none;
+    }
+
+    main {
+        width: 600px;
+    }
+}

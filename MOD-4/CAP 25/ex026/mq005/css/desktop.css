@@ -1,5 +1,23 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) {
+    header menu#itens {
+        display: block;
+    }
 
+    header span#menu {
+        display: none;
+    }
+
+    header ul {
+        display: inline-flex;
+    }
+
+    header li {
+        padding-right: 5px;
+    }
+
+    main {
+        width: 750px;
+    }
 }
